@@ -1,0 +1,30 @@
+# =============================================
+# RAGGuard Dashboard - Netlify Configuration
+# =============================================
+
+[build]
+	command = "npm run build"
+	publish = ".next"
+
+[build.environment]
+	NODE_VERSION = "20"
+	NPM_FLAGS = "--legacy-peer-deps"
+
+# Next.js runtime avec i18n support
+[[plugins]]
+	package = "@netlify/plugin-nextjs"
+
+# Redirects pour le routage i18n
+[[redirects]]
+	from = "/*"
+	to = "/index.html"
+	status = 200
+
+# Headers de sécurité
+[[headers]]
+	for = "/*"
+	[headers.values]
+		X-Frame-Options = "DENY"
+		X-Content-Type-Options = "nosniff"
+		Referrer-Policy = "strict-origin-when-cross-origin"
+		Permissions-Policy = "geolocation=(), microphone=(), camera=()"

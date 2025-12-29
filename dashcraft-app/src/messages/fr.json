@@ -1,0 +1,585 @@
+{
+	"app": {
+		"title": "DashCraft",
+		"searchPlaceholder": "Rechercher...",
+		"themeToggle": "Basculer le thème",
+		"language": "Langue"
+	},
+	"nav": {
+		"rag-stats": "Stats RAG",
+		"rag-chat": "Chat RAG",
+		"rag-documents": "Documents",
+		"rag-queries": "Historique",
+		"rag-monitoring": "Monitoring RAG",
+		"feedbacks": "Feedbacks",
+		"chats": "Chats",
+		"apis": "APIs",
+		"monitoring": "Monitoring",
+		"languages": "Langues",
+		"team": "Équipe",
+		"settings": "Paramètres"
+	},
+	"widgets": {
+		"ragStats": {
+			"title": "Statistiques RAG",
+			"lastUpdate": "Dernière mise à jour",
+			"refresh": "Rafraîchir",
+			"documents": "Documents",
+			"chunks": "Chunks",
+			"queries": "Requêtes",
+			"faithfulness": "Fidélité",
+			"abstentionRate": "Abstention",
+			"avgLatency": "Latence moy.",
+			"last24h": "Dernières 24 heures"
+		},
+		"ragChat": {
+			"title": "Assistant RAG",
+			"placeholder": "Posez une question...",
+			"answer": "Réponse",
+			"hint": "Posez des questions sur vos documents indexés"
+		},
+		"ragDocuments": {
+			"title": "Documents indexés",
+			"count": "{count} documents",
+			"refresh": "Rafraîchir",
+			"empty": "Aucun document indexé",
+			"moreDocuments": "+{count} autres"
+		},
+		"ragQueries": {
+			"title": "Requêtes récentes",
+			"recentQueries": "Dernières requêtes",
+			"refresh": "Rafraîchir",
+			"empty": "Aucune requête",
+			"abstained": "Abstenu",
+			"justNow": "À l'instant",
+			"minutesAgo": "Il y a {count}min",
+			"hoursAgo": "Il y a {count}h"
+		},
+		"ragMonitoring": {
+			"title": "Monitoring RAG",
+			"updatedAt": "Dernière mise à jour",
+			"refresh": "Rafraîchir",
+			"latency": "Latence",
+			"faithfulness": "Fidélité",
+			"abstentionRate": "Abstention",
+			"cost24h": "Coût (24h)",
+			"servicesHealth": "Santé des services",
+			"noServices": "Aucun service à afficher"
+		},
+		"feedbacks": {
+			"title": "Feedbacks utilisateurs",
+			"rating": "Note",
+			"comment": "Commentaire"
+		},
+		"chats": {
+			"title": "Chats",
+			"threads": "Conversations",
+			"participants": "participants"
+		},
+		"apis": {
+			"title": "APIs externes",
+			"service": "Service",
+			"statusOk": "OK",
+			"statusDown": "En panne"
+		},
+		"monitoring": {
+			"title": "Monitoring système",
+			"cpu": "CPU",
+			"memory": "Mémoire",
+			"refresh": "Rafraîchir",
+			"unitMb": "Mo",
+			"updatedAt": "Dernière mise à jour"
+		},
+		"internalApis": {
+			"title": "APIs internes",
+			"successRate": "Taux de succès",
+			"errorRate": "Taux d’erreur",
+			"avgResponse": "Temps moyen",
+			"unitMs": "ms",
+			"requestsLast24h": "Requêtes (24h)",
+			"updatedAt": "Dernière mise à jour",
+			"refresh": "Rafraîchir",
+			"logs": "Logs récents",
+			"noLogs": "Aucun log à afficher",
+			"columns": {
+				"time": "Heure",
+				"method": "Méthode",
+				"route": "Route",
+				"status": "Statut",
+				"duration": "Durée",
+				"user": "Utilisateur"
+			},
+			"filter": {
+				"status": {
+					"label": "Statut",
+					"all": "Tous",
+					"2xx": "2xx",
+					"4xx": "4xx",
+					"5xx": "5xx"
+				},
+				"method": {
+					"label": "Méthode",
+					"ALL": "Toutes",
+					"GET": "GET",
+					"POST": "POST",
+					"PUT": "PUT",
+					"PATCH": "PATCH",
+					"DELETE": "DELETE"
+				}
+			},
+			"previous": "Précédent",
+			"next": "Suivant",
+			"page": "Page",
+			"of": "sur",
+			"pageSize": "Taille"
+		},
+		"languages": {
+			"title": "Langues",
+			"available": "Disponibles",
+			"current": "Courante",
+			"switch": {
+				"label": "Sélection de la langue",
+				"changedTo": "Langue changée vers {name}"
+			}
+		},
+		"team": {
+			"name": "Nom",
+			"role": "Rôle",
+			"status": "Statut",
+			"actions": "Actions",
+			"edit": "Modifier",
+			"delete": "Supprimer"
+		},
+		"settings": {
+			"title": "Paramètres",
+			"optionA": "Option A",
+			"optionB": "Option B",
+			"theme": {
+				"title": "Thème",
+				"modeLabel": "Mode",
+				"system": "Système",
+				"dark": "Sombre",
+				"light": "Clair"
+			},
+			"sidebar": {
+				"title": "Barre latérale",
+				"openLabel": "Ouvrir la barre latérale"
+			},
+			"modules": {
+				"title": "Modules",
+				"visibilityLabel": "Visibilité des modules",
+				"selectAll": "Tout afficher",
+				"deselectAll": "Tout masquer",
+				"ariaLabel": "Liste des modules"
+			}
+		}
+	},
+	"pages": {
+		"ragStats": {
+			"title": "Statistiques RAG",
+			"description": "Surveillez les performances et métriques de qualité du pipeline RAG",
+			"refresh": "Rafraîchir",
+			"documents": "Documents",
+			"chunks": "Chunks",
+			"queries": "Requêtes",
+			"faithfulness": "Fidélité",
+			"abstentionRate": "Taux d'abstention",
+			"avgLatency": "Latence moyenne",
+			"weeklyTrends": "Tendances hebdomadaires",
+			"last24hSummary": "Résumé des dernières 24h",
+			"live": "En direct",
+			"lastUpdate": "Dernière mise à jour",
+			"keyMetrics": "Indicateurs clés",
+			"analytics": "Analytiques"
+		},
+		"ragChat": {
+			"title": "Chat RAG",
+			"description": "Posez des questions et obtenez des réponses basées sur vos documents",
+			"clearHistory": "Effacer l'historique",
+			"emptyState": "Démarrez une conversation",
+			"emptyStateHint": "Posez n'importe quelle question sur vos documents indexés",
+			"inputPlaceholder": "Tapez votre question...",
+			"send": "Envoyer",
+			"thinking": "Réflexion...",
+			"sources": "Sources",
+			"abstained": "Abstenu",
+			"ready": "Prêt",
+			"messages": "Messages",
+			"quickTest": "Test rapide",
+			"placeholder": "Question rapide...",
+			"assistant": "Assistant",
+			"you": "Vous",
+			"answer": "Réponse",
+			"hint": "Testez rapidement avec une question ou accédez à la page complète pour une conversation détaillée",
+			"error": "Erreur",
+			"similarity": "Similarité"
+		},
+		"ragDocuments": {
+			"title": "Gestion des documents",
+			"description": "Uploadez et gérez les documents pour l'indexation RAG",
+			"refresh": "Rafraîchir",
+			"addDocument": "Ajouter un document",
+			"uploadTitle": "Upload d'un nouveau document",
+			"docTitle": "Titre",
+			"docTitlePlaceholder": "Titre du document...",
+			"contentType": "Type de contenu",
+			"docContent": "Contenu",
+			"docContentPlaceholder": "Collez le contenu de votre document ici...",
+			"cancel": "Annuler",
+			"upload": "Uploader",
+			"uploadSuccess": "Document uploadé avec succès ({chunks} chunks créés)",
+			"documentsList": "Documents",
+			"empty": "Aucun document",
+			"emptyHint": "Uploadez votre premier document pour commencer",
+			"delete": "Supprimer",
+			"confirmDelete": "Êtes-vous sûr de vouloir supprimer ce document ?",
+			"expand": "Afficher le contenu",
+			"collapse": "Masquer le contenu",
+			"noContent": "Contenu non disponible",
+			"chunks": "chunks",
+			"totalChunks": "chunks au total",
+			"ready": "Prêt",
+			"documents": "Documents",
+			"loading": "Chargement...",
+			"content": "Contenu",
+			"success": "Succès",
+			"error": "Erreur",
+			"uploadFile": "Télécharger un fichier",
+			"dragFileHere": "Glissez-déposez un fichier ici",
+			"browseFiles": "parcourir les fichiers",
+			"supportedFormats": "Formats supportés: PDF, DOC, DOCX (max 10MB)",
+			"processingFile": "Traitement du fichier...",
+			"removeFile": "Supprimer le fichier",
+			"clearFile": "Effacer le fichier",
+			"contentExtracted": "Contenu extrait du fichier",
+			"unsupportedFileType": "Type de fichier non supporté. Seuls les fichiers PDF, DOC et DOCX sont acceptés",
+			"fileTooLarge": "Fichier trop volumineux. La taille maximale est de 10MB"
+		},
+		"ragQueries": {
+			"title": "Historique des requêtes",
+			"description": "Consultez et analysez les requêtes RAG passées et leurs performances",
+			"refresh": "Rafraîchir",
+			"queryHistory": "Historique des requêtes",
+			"empty": "Aucune requête",
+			"emptyHint": "Les requêtes apparaîtront ici après utilisation du chat RAG",
+			"queryDetails": "Détails de la requête",
+			"selectQuery": "Sélectionnez une requête pour voir les détails",
+			"queryLabel": "Question",
+			"responseLabel": "Réponse",
+			"faithfulness": "Fidélité",
+			"latency": "Latence",
+			"breakdown": "Détail de la latence",
+			"retrievalLatency": "Récupération",
+			"llmLatency": "Génération LLM",
+			"model": "Modèle",
+			"sources": "Sources",
+			"abstained": "Abstenu",
+			"highFaithfulness": "Haute fidélité",
+			"highScore": "Score élevé",
+			"live": "En direct",
+			"queries": "Requêtes",
+			"loading": "Chargement"
+		},
+		"ragMonitoring": {
+			"title": "Monitoring RAG",
+			"description": "Surveillez les performances du pipeline RAG et la santé des services externes",
+			"refresh": "Rafraîchir",
+			"updatedAt": "Dernière mise à jour",
+			"avgLatency": "Latence moyenne",
+			"faithfulness": "Fidélité",
+			"abstentionRate": "Taux d'abstention",
+			"queries24h": "Requêtes (24h)",
+			"cost24h": "Coût (24h)",
+			"servicesHealth": "Santé des services",
+			"noServices": "Aucun service configuré",
+			"responseTime": "Temps de réponse",
+			"status": {
+				"healthy": "Opérationnel",
+				"degraded": "Dégradé",
+				"down": "Hors service"
+			},
+			"datadogMetrics": "Métriques Datadog",
+			"datadogNotConfigured": "Non configuré",
+			"configureDatadog": "Configurez Datadog pour voir les métriques historiques",
+			"noData": "Aucune donnée disponible",
+			"lastValue": "Dernière valeur"
+		},
+		"generic": {
+			"moduleLabel": "Module",
+			"comingSoon": "Cette page sera bientôt enrichie."
+		},
+		"feedbacks": {
+			"subtitle": "Gérez vos feedbacks",
+			"search": "Rechercher",
+			"searchPlaceholder": "Rechercher un feedback...",
+			"form": "Créer un feedback",
+			"addFeedback": "Ajouter",
+			"authorPlaceholder": "Nom de l'auteur",
+			"commentPlaceholder": "Votre commentaire...",
+			"fields": {
+				"author": "Auteur",
+				"comment": "Commentaire",
+				"rating": "Note",
+				"status": "Statut",
+				"time": "Heure",
+				"actions": "Actions",
+				"edit": "Modifier",
+				"delete": "Supprimer",
+				"select": "Sélectionner"
+			},
+			"status": {
+				"new": "Nouveau",
+				"in_progress": "En cours",
+				"resolved": "Résolu"
+			},
+			"filter": {
+				"label": "Filtrer par statut",
+				"all": "Tous",
+				"new": "Nouveaux",
+				"in_progress": "En cours",
+				"resolved": "Résolus"
+			},
+			"dateFilter": {
+				"from": "Date de début",
+				"to": "Date de fin"
+			},
+			"bulk": {
+				"label": "Actions groupées",
+				"selected": "{count} sélectionné(s)",
+				"markNew": "Marquer comme nouveau",
+				"markInProgress": "Marquer en cours",
+				"markResolved": "Marquer résolu",
+				"deleteSelected": "Supprimer la sélection",
+				"deleteConfirm": "Supprimer les feedbacks sélectionnés ?",
+				"selectAll": "Tout sélectionner",
+				"selectRow": "Sélectionner la ligne"
+			},
+			"loading": "Chargement...",
+			"noResults": "Aucun résultat",
+			"error": "Erreur",
+			"save": "Enregistrer",
+			"cancel": "Annuler",
+			"deleteConfirm": "Supprimer ce feedback ?",
+			"previous": "Précédent",
+			"next": "Suivant",
+			"page": "Page",
+			"of": "sur",
+			"pageSize": "Taille",
+			"live": {
+				"created": "Feedback créé",
+				"updated": "Feedback mis à jour",
+				"deleted": "Feedback supprimé"
+			}
+		},
+		"chats": {
+			"subtitle": "Gérez vos conversations",
+			"search": "Rechercher",
+			"searchPlaceholder": "Rechercher une conversation...",
+			"form": "Créer une conversation",
+			"addThread": "Ajouter",
+			"viewMessages": "Voir les messages",
+			"fields": {
+				"title": "Titre",
+				"participants": "Participants",
+				"status": "Statut",
+				"actions": "Actions",
+				"edit": "Modifier",
+				"delete": "Supprimer"
+			},
+			"status": {
+				"open": "Ouvert",
+				"archived": "Archivé"
+			},
+			"filter": {
+				"label": "Filtrer par statut",
+				"all": "Tous",
+				"open": "Ouverts",
+				"archived": "Archivés"
+			},
+			"loading": "Chargement...",
+			"noResults": "Aucun résultat",
+			"error": "Erreur",
+			"save": "Enregistrer",
+			"cancel": "Annuler",
+			"deleteConfirm": "Supprimer cette conversation ?",
+			"previous": "Précédent",
+			"next": "Suivant",
+			"page": "Page",
+			"of": "sur",
+			"pageSize": "Taille",
+			"messages": {
+				"title": "Messages",
+				"panelTitle": "Messages pour « {title} »",
+				"limit": "Limite",
+				"selectThreadHint": "Sélectionnez une conversation pour afficher ses messages.",
+				"loading": "Chargement des messages...",
+				"empty": "Aucun message"
+			},
+			"live": {
+				"created": "Conversation créée",
+				"updated": "Conversation mise à jour",
+				"deleted": "Conversation supprimée",
+				"messagesLoaded": "Messages chargés : {count}"
+			}
+		},
+		"languages": {
+			"subtitle": "Gérez la langue de l'interface",
+			"regionLabel": "Contenu des langues"
+		},
+		"apis": {
+			"subtitle": "Surveiller les services externes",
+			"regionLabel": "Contenu des APIs",
+			"search": "Rechercher",
+			"searchPlaceholder": "Rechercher une API...",
+			"form": "Créer une API",
+			"addApi": "Ajouter",
+			"fields": {
+				"name": "Nom",
+				"baseUrl": "URL de base",
+				"version": "Version",
+				"status": "Statut",
+				"enabled": "Activée",
+				"tags": "Étiquettes",
+				"latencyMs": "Latence (ms)",
+				"uptimePct": "Disponibilité (%)",
+				"lastChecked": "Dernière vérification",
+				"actions": "Actions",
+				"edit": "Modifier",
+				"delete": "Supprimer",
+				"select": "Sélectionner"
+			},
+			"status": {
+				"up": "Opérationnelle",
+				"down": "En panne"
+			},
+			"filter": {
+				"label": "Filtrer par statut",
+				"all": "Toutes",
+				"up": "Opérationnelles",
+				"down": "En panne"
+			},
+			"sort": {
+				"label": "Trier",
+				"by": "Champ",
+				"dir": "Ordre",
+				"byLastChecked": "Dernière vérification",
+				"byName": "Nom",
+				"byLatency": "Latence",
+				"asc": "Ascendant",
+				"desc": "Descendant"
+			},
+			"loading": "Chargement...",
+			"noResults": "Aucun résultat",
+			"error": "Erreur",
+			"save": "Enregistrer",
+			"cancel": "Annuler",
+			"deleteConfirm": "Supprimer cette API ?",
+			"previous": "Précédent",
+			"next": "Suivant",
+			"page": "Page",
+			"of": "sur",
+			"pageSize": "Taille",
+			"live": {
+				"created": "API créée",
+				"updated": "API mise à jour",
+				"deleted": "API supprimée"
+			},
+			"keys": {
+				"title": "Clés API",
+				"form": "Créer une clé",
+				"addKey": "Ajouter",
+				"fields": {
+					"api": "API",
+					"label": "Libellé",
+					"key": "Clé",
+					"status": "Statut",
+					"scopes": "Périmètres",
+					"scopesPlaceholder": "Ex : read, write",
+					"createdAt": "Créée",
+					"lastUsedAt": "Dernière utilisation",
+					"actions": "Actions",
+					"rotate": "Régénérer",
+					"copy": "Copier",
+					"copied": "Copié !",
+					"select": "Sélectionner"
+				},
+				"status": {
+					"active": "Active",
+					"revoked": "Révoquée"
+				},
+				"filter": {
+					"label": "Filtrer par statut",
+					"all": "Toutes",
+					"active": "Actives",
+					"revoked": "Révoquées"
+				},
+				"sort": {
+					"label": "Trier",
+					"by": "Champ",
+					"dir": "Ordre",
+					"byLabel": "Libellé",
+					"byCreatedAt": "Création",
+					"byLastUsedAt": "Dernière utilisation",
+					"asc": "Ascendant",
+					"desc": "Descendant"
+				},
+				"loading": "Chargement...",
+				"noResults": "Aucun résultat",
+				"error": "Erreur",
+				"deleteConfirm": "Supprimer cette clé ?",
+				"rotateConfirm": "Régénérer cette clé ?",
+				"live": {
+					"created": "Clé créée",
+					"updated": "Clé mise à jour",
+					"deleted": "Clé supprimée",
+					"rotated": "Clé régénérée"
+				}
+			}
+		},
+		"monitoring": {
+			"subtitle": "Surveiller les ressources système",
+			"regionLabel": "Contenu de monitoring"
+		},
+		"settings": {
+			"subtitle": "Configurez votre tableau de bord et votre compte",
+			"regionLabel": "Contenu des paramètres",
+			"tabs": {
+				"ariaLabel": "Sections des paramètres",
+				"dashboard": "Tableau de bord",
+				"system": "Système"
+			}
+		},
+		"team": {
+			"title": "Gestion de l'équipe",
+			"name": "Nom",
+			"role": "Rôle",
+			"memberStatus": "Statut",
+			"actions": "Actions",
+			"edit": "Modifier",
+			"delete": "Supprimer",
+			"addUser": "Ajouter un membre",
+			"save": "Enregistrer",
+			"cancel": "Annuler",
+			"loading": "Chargement...",
+			"noResults": "Aucun membre dans l'équipe",
+			"deleteConfirm": "Supprimer ce membre de l'équipe ?",
+			"errors": {
+				"nameRequired": "Le nom est requis"
+			},
+			"live": {
+				"created": "Membre de l'équipe créé",
+				"updated": "Membre de l'équipe mis à jour",
+				"deleted": "Membre de l'équipe supprimé"
+			},
+			"roles": {
+				"admin": "Administrateur",
+				"editor": "Éditeur",
+				"viewer": "Lecteur"
+			},
+			"statusOptions": {
+				"active": "Actif",
+				"inactive": "Inactif"
+			}
+		}
+	}
+}

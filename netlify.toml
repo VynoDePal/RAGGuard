@@ -1,0 +1,39 @@
+# =============================================
+# RAGGuard Backend API - Netlify Configuration
+# =============================================
+
+[build]
+	command = "npm run build"
+	publish = ".next"
+
+[build.environment]
+	NODE_VERSION = "20"
+	NPM_FLAGS = "--legacy-peer-deps"
+
+# Next.js runtime
+[[plugins]]
+	package = "@netlify/plugin-nextjs"
+
+# Redirects et headers pour l'API
+[[redirects]]
+	from = "/api/*"
+	to = "/.netlify/functions/:splat"
+	status = 200
+
+[[headers]]
+	for = "/api/*"
+	[headers.values]
+		Access-Control-Allow-Origin = "*"
+		Access-Control-Allow-Methods = "GET, POST, PUT, DELETE, OPTIONS"
+		Access-Control-Allow-Headers = "Content-Type, Authorization, X-User-Id, X-Tenant-Id"
+		Access-Control-Allow-Credentials = "true"
+
+# Context-specific settings
+[context.production]
+	environment = { DD_ENV = "production" }
+
+[context.deploy-preview]
+	environment = { DD_ENV = "staging" }
+
+[context.branch-deploy]
+	environment = { DD_ENV = "development" }

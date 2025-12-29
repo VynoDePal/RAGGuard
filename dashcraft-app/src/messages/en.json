@@ -1,0 +1,585 @@
+{
+	"app": {
+		"title": "DashCraft",
+		"searchPlaceholder": "Search...",
+		"themeToggle": "Toggle theme",
+		"language": "Language"
+	},
+	"nav": {
+		"rag-stats": "RAG Stats",
+		"rag-chat": "RAG Chat",
+		"rag-documents": "Documents",
+		"rag-queries": "Query History",
+		"rag-monitoring": "RAG Monitoring",
+		"feedbacks": "Feedbacks",
+		"chats": "Chats",
+		"apis": "APIs",
+		"monitoring": "Monitoring",
+		"languages": "Languages",
+		"team": "Team",
+		"settings": "Settings"
+	},
+	"widgets": {
+		"ragStats": {
+			"title": "RAG Statistics",
+			"lastUpdate": "Last update",
+			"refresh": "Refresh",
+			"documents": "Documents",
+			"chunks": "Chunks",
+			"queries": "Queries",
+			"faithfulness": "Faithfulness",
+			"abstentionRate": "Abstention",
+			"avgLatency": "Avg Latency",
+			"last24h": "Last 24 hours"
+		},
+		"ragChat": {
+			"title": "RAG Assistant",
+			"placeholder": "Ask a question...",
+			"answer": "Answer",
+			"hint": "Ask questions about your indexed documents"
+		},
+		"ragDocuments": {
+			"title": "Indexed Documents",
+			"count": "{count} documents",
+			"refresh": "Refresh",
+			"empty": "No documents indexed",
+			"moreDocuments": "+{count} more"
+		},
+		"ragQueries": {
+			"title": "Recent Queries",
+			"recentQueries": "Last queries",
+			"refresh": "Refresh",
+			"empty": "No queries yet",
+			"abstained": "Abstained",
+			"justNow": "Just now",
+			"minutesAgo": "{count}m ago",
+			"hoursAgo": "{count}h ago"
+		},
+		"ragMonitoring": {
+			"title": "RAG Monitoring",
+			"updatedAt": "Last update",
+			"refresh": "Refresh",
+			"latency": "Latency",
+			"faithfulness": "Faithfulness",
+			"abstentionRate": "Abstention",
+			"cost24h": "Cost (24h)",
+			"servicesHealth": "Services Health",
+			"noServices": "No services to display"
+		},
+		"feedbacks": {
+			"title": "User feedbacks",
+			"rating": "Rating",
+			"comment": "Comment"
+		},
+		"chats": {
+			"title": "Chats",
+			"threads": "Threads",
+			"participants": "participants"
+		},
+		"apis": {
+			"title": "External APIs",
+			"service": "Service",
+			"statusOk": "OK",
+			"statusDown": "Down"
+		},
+		"monitoring": {
+			"title": "System monitoring",
+			"cpu": "CPU",
+			"memory": "Memory",
+			"refresh": "Refresh",
+			"unitMb": "MB",
+			"updatedAt": "Last update"
+		},
+		"internalApis": {
+			"title": "Internal APIs",
+			"successRate": "Success rate",
+			"errorRate": "Error rate",
+			"avgResponse": "Avg response",
+			"unitMs": "ms",
+			"requestsLast24h": "Requests (24h)",
+			"updatedAt": "Last update",
+			"refresh": "Refresh",
+			"logs": "Recent logs",
+			"noLogs": "No logs to display",
+			"columns": {
+				"time": "Time",
+				"method": "Method",
+				"route": "Route",
+				"status": "Status",
+				"duration": "Duration",
+				"user": "User"
+			},
+			"filter": {
+				"status": {
+					"label": "Status",
+					"all": "All",
+					"2xx": "2xx",
+					"4xx": "4xx",
+					"5xx": "5xx"
+				},
+				"method": {
+					"label": "Method",
+					"ALL": "All",
+					"GET": "GET",
+					"POST": "POST",
+					"PUT": "PUT",
+					"PATCH": "PATCH",
+					"DELETE": "DELETE"
+				}
+			},
+			"previous": "Previous",
+			"next": "Next",
+			"page": "Page",
+			"of": "of",
+			"pageSize": "Size"
+		},
+		"languages": {
+			"title": "Languages",
+			"available": "Available",
+			"current": "Current",
+			"switch": {
+				"label": "Language selection",
+				"changedTo": "Language changed to {name}"
+			}
+		},
+		"team": {
+			"name": "Name",
+			"role": "Role",
+			"status": "Status",
+			"actions": "Actions",
+			"edit": "Edit",
+			"delete": "Delete"
+		},
+		"settings": {
+			"title": "Settings",
+			"optionA": "Option A",
+			"optionB": "Option B",
+			"theme": {
+				"title": "Theme",
+				"modeLabel": "Mode",
+				"system": "System",
+				"dark": "Dark",
+				"light": "Light"
+			},
+			"sidebar": {
+				"title": "Sidebar",
+				"openLabel": "Show sidebar"
+			},
+			"modules": {
+				"title": "Modules",
+				"visibilityLabel": "Modules visibility",
+				"selectAll": "Show all",
+				"deselectAll": "Hide all",
+				"ariaLabel": "Modules list"
+			}
+		}
+	},
+	"pages": {
+		"ragStats": {
+			"title": "RAG Statistics",
+			"description": "Monitor RAG pipeline performance and quality metrics",
+			"refresh": "Refresh",
+			"documents": "Documents",
+			"chunks": "Chunks",
+			"queries": "Queries",
+			"faithfulness": "Faithfulness",
+			"abstentionRate": "Abstention Rate",
+			"avgLatency": "Avg Latency",
+			"weeklyTrends": "Weekly Trends",
+			"last24hSummary": "Last 24 Hours Summary",
+			"live": "Live",
+			"lastUpdate": "Last update",
+			"keyMetrics": "Key Metrics",
+			"analytics": "Analytics"
+		},
+		"ragChat": {
+			"title": "RAG Chat",
+			"description": "Ask questions and get AI-powered answers from your documents",
+			"clearHistory": "Clear History",
+			"emptyState": "Start a conversation",
+			"emptyStateHint": "Ask any question about your indexed documents",
+			"inputPlaceholder": "Type your question...",
+			"send": "Send",
+			"thinking": "Thinking...",
+			"sources": "Sources",
+			"abstained": "Abstained",
+			"ready": "Ready",
+			"messages": "Messages",
+			"quickTest": "Quick Test",
+			"placeholder": "Quick question...",
+			"assistant": "Assistant",
+			"you": "You",
+			"answer": "Answer",
+			"hint": "Quick test with a question or access the full page for a detailed conversation",
+			"error": "Error",
+			"similarity": "Similarity"
+		},
+		"ragDocuments": {
+			"title": "Document Management",
+			"description": "Upload and manage documents for RAG indexing",
+			"refresh": "Refresh",
+			"addDocument": "Add Document",
+			"uploadTitle": "Upload New Document",
+			"docTitle": "Title",
+			"docTitlePlaceholder": "Document title...",
+			"contentType": "Content Type",
+			"docContent": "Content",
+			"docContentPlaceholder": "Paste your document content here...",
+			"cancel": "Cancel",
+			"upload": "Upload",
+			"uploadSuccess": "Document uploaded successfully ({chunks} chunks created)",
+			"documentsList": "Documents",
+			"empty": "No documents yet",
+			"emptyHint": "Upload your first document to get started",
+			"delete": "Delete",
+			"confirmDelete": "Are you sure you want to delete this document?",
+			"expand": "Show content",
+			"collapse": "Hide content",
+			"noContent": "Content not available",
+			"chunks": "chunks",
+			"totalChunks": "total chunks",
+			"ready": "Ready",
+			"documents": "Documents",
+			"loading": "Loading...",
+			"content": "Content",
+			"success": "Success",
+			"error": "Error",
+			"uploadFile": "Upload a file",
+			"dragFileHere": "Drag and drop a file here",
+			"browseFiles": "browse files",
+			"supportedFormats": "Supported formats: PDF, DOC, DOCX (max 10MB)",
+			"processingFile": "Processing file...",
+			"removeFile": "Remove file",
+			"clearFile": "Clear file",
+			"contentExtracted": "Content extracted from file",
+			"unsupportedFileType": "Unsupported file type. Only PDF, DOC, and DOCX files are accepted",
+			"fileTooLarge": "File too large. Maximum size is 10MB"
+		},
+		"ragQueries": {
+			"title": "Query History",
+			"description": "View and analyze past RAG queries and their performance",
+			"refresh": "Refresh",
+			"queryHistory": "Query History",
+			"empty": "No queries yet",
+			"emptyHint": "Queries will appear here after using the RAG chat",
+			"queryDetails": "Query Details",
+			"selectQuery": "Select a query to view details",
+			"queryLabel": "Query",
+			"responseLabel": "Response",
+			"faithfulness": "Faithfulness",
+			"latency": "Latency",
+			"breakdown": "Latency Breakdown",
+			"retrievalLatency": "Retrieval",
+			"llmLatency": "LLM Generation",
+			"model": "Model",
+			"sources": "Sources",
+			"abstained": "Abstained",
+			"highFaithfulness": "High faithfulness",
+			"highScore": "High score",
+			"live": "Live",
+			"queries": "Queries",
+			"loading": "Loading"
+		},
+		"ragMonitoring": {
+			"title": "RAG Monitoring",
+			"description": "Monitor RAG pipeline performance and external services health",
+			"refresh": "Refresh",
+			"updatedAt": "Last update",
+			"avgLatency": "Avg Latency",
+			"faithfulness": "Faithfulness",
+			"abstentionRate": "Abstention Rate",
+			"queries24h": "Queries (24h)",
+			"cost24h": "Cost (24h)",
+			"servicesHealth": "Services Health",
+			"noServices": "No services configured",
+			"responseTime": "Response time",
+			"status": {
+				"healthy": "Healthy",
+				"degraded": "Degraded",
+				"down": "Down"
+			},
+			"datadogMetrics": "Datadog Metrics",
+			"datadogNotConfigured": "Not configured",
+			"configureDatadog": "Configure Datadog to see historical metrics",
+			"noData": "No data available",
+			"lastValue": "Last value"
+		},
+		"generic": {
+			"moduleLabel": "Module",
+			"comingSoon": "This page will be enriched soon."
+		},
+		"feedbacks": {
+			"subtitle": "Manage your feedbacks",
+			"search": "Search",
+			"searchPlaceholder": "Search a feedback...",
+			"form": "Create a feedback",
+			"addFeedback": "Add",
+			"authorPlaceholder": "Author name",
+			"commentPlaceholder": "Your comment...",
+			"fields": {
+				"author": "Author",
+				"comment": "Comment",
+				"rating": "Rating",
+				"status": "Status",
+				"time": "Time",
+				"actions": "Actions",
+				"edit": "Edit",
+				"delete": "Delete",
+				"select": "Select"
+			},
+			"status": {
+				"new": "New",
+				"in_progress": "In progress",
+				"resolved": "Resolved"
+			},
+			"filter": {
+				"label": "Filter by status",
+				"all": "All",
+				"new": "New",
+				"in_progress": "In progress",
+				"resolved": "Resolved"
+			},
+			"dateFilter": {
+				"from": "From date",
+				"to": "To date"
+			},
+			"bulk": {
+				"label": "Bulk actions",
+				"selected": "{count} selected",
+				"markNew": "Mark as new",
+				"markInProgress": "Mark in progress",
+				"markResolved": "Mark resolved",
+				"deleteSelected": "Delete selected",
+				"deleteConfirm": "Delete selected feedbacks?",
+				"selectAll": "Select all",
+				"selectRow": "Select row"
+			},
+			"loading": "Loading...",
+			"noResults": "No results",
+			"error": "Error",
+			"save": "Save",
+			"cancel": "Cancel",
+			"deleteConfirm": "Delete this feedback?",
+			"previous": "Previous",
+			"next": "Next",
+			"page": "Page",
+			"of": "of",
+			"pageSize": "Size",
+			"live": {
+				"created": "Feedback created",
+				"updated": "Feedback updated",
+				"deleted": "Feedback deleted"
+			}
+		},
+		"chats": {
+			"subtitle": "Manage your chats",
+			"search": "Search",
+			"searchPlaceholder": "Search a thread...",
+			"form": "Create a thread",
+			"addThread": "Add",
+			"viewMessages": "View messages",
+			"fields": {
+				"title": "Title",
+				"participants": "Participants",
+				"status": "Status",
+				"actions": "Actions",
+				"edit": "Edit",
+				"delete": "Delete"
+			},
+			"status": {
+				"open": "Open",
+				"archived": "Archived"
+			},
+			"filter": {
+				"label": "Filter by status",
+				"all": "All",
+				"open": "Open",
+				"archived": "Archived"
+			},
+			"loading": "Loading...",
+			"noResults": "No results",
+			"error": "Error",
+			"save": "Save",
+			"cancel": "Cancel",
+			"deleteConfirm": "Delete this thread?",
+			"previous": "Previous",
+			"next": "Next",
+			"page": "Page",
+			"of": "of",
+			"pageSize": "Size",
+			"messages": {
+				"title": "Messages",
+				"panelTitle": "Messages for {title}",
+				"limit": "Limit",
+				"selectThreadHint": "Select a thread to view its messages.",
+				"loading": "Loading messages...",
+				"empty": "No messages"
+			},
+			"live": {
+				"created": "Thread created",
+				"updated": "Thread updated",
+				"deleted": "Thread deleted",
+				"messagesLoaded": "Messages loaded: {count}"
+			}
+		},
+		"languages": {
+			"subtitle": "Manage interface language",
+			"regionLabel": "Languages content"
+		},
+		"monitoring": {
+			"subtitle": "Monitor system resources",
+			"regionLabel": "Monitoring content"
+		},
+		"apis": {
+			"subtitle": "Monitor external services",
+			"regionLabel": "APIs content",
+			"search": "Search",
+			"searchPlaceholder": "Search an API...",
+			"form": "Create an API",
+			"addApi": "Add",
+			"fields": {
+				"name": "Name",
+				"baseUrl": "Base URL",
+				"version": "Version",
+				"status": "Status",
+				"enabled": "Enabled",
+				"tags": "Tags",
+				"latencyMs": "Latency (ms)",
+				"uptimePct": "Uptime (%)",
+				"lastChecked": "Last check",
+				"actions": "Actions",
+				"edit": "Edit",
+				"delete": "Delete",
+				"select": "Select"
+			},
+			"status": {
+				"up": "Up",
+				"down": "Down"
+			},
+			"filter": {
+				"label": "Filter by status",
+				"all": "All",
+				"up": "Up",
+				"down": "Down"
+			},
+			"sort": {
+				"label": "Sort",
+				"by": "Field",
+				"dir": "Order",
+				"byLastChecked": "Last check",
+				"byName": "Name",
+				"byLatency": "Latency",
+				"asc": "Ascending",
+				"desc": "Descending"
+			},
+			"loading": "Loading...",
+			"noResults": "No results",
+			"error": "Error",
+			"save": "Save",
+			"cancel": "Cancel",
+			"deleteConfirm": "Delete this API?",
+			"previous": "Previous",
+			"next": "Next",
+			"page": "Page",
+			"of": "of",
+			"pageSize": "Size",
+			"live": {
+				"created": "API created",
+				"updated": "API updated",
+				"deleted": "API deleted"
+			},
+			"keys": {
+				"title": "API keys",
+				"form": "Create a key",
+				"addKey": "Add",
+				"fields": {
+					"api": "API",
+					"label": "Label",
+					"key": "Key",
+					"status": "Status",
+					"scopes": "Scopes",
+					"scopesPlaceholder": "Ex : read, write",
+					"createdAt": "Created",
+					"lastUsedAt": "Last used",
+					"actions": "Actions",
+					"rotate": "Rotate",
+					"copy": "Copy",
+					"copied": "Copied!",
+					"select": "Select"
+				},
+				"status": {
+					"active": "Active",
+					"revoked": "Revoked"
+				},
+				"filter": {
+					"label": "Filter by status",
+					"all": "All",
+					"active": "Active",
+					"revoked": "Revoked"
+				},
+				"sort": {
+					"label": "Sort",
+					"by": "Field",
+					"dir": "Order",
+					"byLabel": "Label",
+					"byCreatedAt": "Created",
+					"byLastUsedAt": "Last used",
+					"asc": "Ascending",
+					"desc": "Descending"
+				},
+				"loading": "Loading...",
+				"noResults": "No results",
+				"error": "Error",
+				"deleteConfirm": "Delete this key?",
+				"rotateConfirm": "Rotate this key?",
+				"live": {
+					"created": "Key created",
+					"updated": "Key updated",
+					"deleted": "Key deleted",
+					"rotated": "Key rotated"
+				}
+			}
+		},
+		"settings": {
+			"subtitle": "Configure your dashboard and account",
+			"regionLabel": "Settings content",
+			"tabs": {
+				"ariaLabel": "Settings sections",
+				"dashboard": "Dashboard",
+				"system": "System"
+			}
+		},
+		"team": {
+			"title": "Team management",
+			"name": "Name",
+			"role": "Role",
+			"memberStatus": "Status",
+			"actions": "Actions",
+			"edit": "Edit",
+			"delete": "Delete",
+			"addUser": "Add member",
+			"save": "Save",
+			"cancel": "Cancel",
+			"loading": "Loading...",
+			"noResults": "No team members",
+			"deleteConfirm": "Delete this team member?",
+			"errors": {
+				"nameRequired": "Name is required"
+			},
+			"live": {
+				"created": "Team member created",
+				"updated": "Team member updated",
+				"deleted": "Team member deleted"
+			},
+			"roles": {
+				"admin": "Administrator",
+				"editor": "Editor",
+				"viewer": "Viewer"
+			},
+			"statusOptions": {
+				"active": "Active",
+				"inactive": "Inactive"
+			}
+		}
+	}
+}
