@@ -296,7 +296,6 @@ function StatCard({
 	label,
 	value,
 	trend,
-	trendColor,
 	className,
 }: {
 	icon: Parameters<typeof Icon>[0]['name']
@@ -307,7 +306,6 @@ function StatCard({
 		value: number
 		isPositive: boolean
 	}
-	trendColor?: string
 	className?: string
 }) {
 	return (

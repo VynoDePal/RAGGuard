@@ -1,6 +1,9 @@
 import type {IconName} from '@/lib/icons'
 
 export type DashboardKey =
+	| 'users'
+	| 'notifications'
+	| 'emails'
 	| 'feedbacks'
 	| 'chats'
 	| 'apis'

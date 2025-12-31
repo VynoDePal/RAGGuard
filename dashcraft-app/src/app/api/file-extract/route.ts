@@ -55,8 +55,8 @@ export async function POST(request: NextRequest) {
 
 		if (fileType === 'pdf') {
 			const pdfReader = new PdfReader()
-			let pageCount = 0
 			let textBuffer = ''
+			let pdfPageCount = 0
 			
 			await new Promise<void>((resolve, reject) => {
 				pdfReader.parseBuffer(buffer, (err, item) => {
@@ -69,7 +69,7 @@ export async function POST(request: NextRequest) {
 						return
 					}
 					if (item.page) {
-						pageCount += 1
+						pdfPageCount += 1
 					}
 					if (item.text) {
 						textBuffer += item.text + '\n'
@@ -78,6 +78,7 @@ export async function POST(request: NextRequest) {
 			})
 			
 			extractedText = textBuffer.trim()
+			pageCount = pdfPageCount
 		} else {
 			// Extraction DOC/DOCX avec mammoth
 			const result = await mammoth.extractRawText({buffer})

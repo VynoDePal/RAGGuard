@@ -27,6 +27,7 @@ export function RagQueriesWidget() {
 		} catch (err) {
 			// Silently fail for queries list if API doesn't exist
 			setQueries([])
+			setError((err as Error).message)
 		} finally {
 			setLoading(false)
 		}

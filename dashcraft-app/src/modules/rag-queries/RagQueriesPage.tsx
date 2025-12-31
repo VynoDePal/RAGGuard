@@ -27,6 +27,7 @@ export function RagQueriesPage() {
 			setQueries(data)
 		} catch (err) {
 			setQueries([])
+			setError((err as Error).message)
 		} finally {
 			setLoading(false)
 		}
@@ -44,12 +45,6 @@ export function RagQueriesPage() {
 		if (score >= 0.8) return 'text-emerald-400'
 		if (score >= 0.6) return 'text-amber-400'
 		return 'text-red-400'
-	}
-
-	const getScoreBg = (score: number) => {
-		if (score >= 0.8) return 'bg-emerald-500/20'
-		if (score >= 0.6) return 'bg-amber-500/20'
-		return 'bg-red-500/20'
 	}
 
 	return (

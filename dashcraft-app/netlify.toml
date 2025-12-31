@@ -14,12 +14,6 @@
 [[plugins]]
 	package = "@netlify/plugin-nextjs"
 
-# Redirects pour le routage i18n
-[[redirects]]
-	from = "/*"
-	to = "/index.html"
-	status = 200
-
 # Headers de sécurité
 [[headers]]
 	for = "/*"
