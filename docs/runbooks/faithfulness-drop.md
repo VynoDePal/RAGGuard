@@ -1,7 +1,7 @@
 # Runbook: Chute du Score de Fidélité
 
 ## Alerte P1
-**Condition:** `avg(last_30m): llm.response.faithfulness_score < 0.75`
+**Condition:** `avg(last_30m): ragguard.llm.response.faithfulness_score < 0.75`
 
 ---
 

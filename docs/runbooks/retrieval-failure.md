@@ -1,7 +1,7 @@
 # Runbook: Échec de Retrieval
 
 ## Alerte P1
-**Condition:** `avg(last_5m): rag.retrieval.success_rate < 90`
+**Condition:** `avg(last_5m): ragguard.rag.retrieval.success_rate < 0.9`
 
 ---
 

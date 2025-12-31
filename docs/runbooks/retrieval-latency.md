@@ -1,7 +1,7 @@
 # Runbook: Hausse de Latence Retrieval
 
 ## Alerte P2
-**Condition:** `p95(rag.retrieval.latency_ms) > 500`
+**Condition:** `p95(ragguard.rag.retrieval.latency_ms) > 500`
 
 ---
 
