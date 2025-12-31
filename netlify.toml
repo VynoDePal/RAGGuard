@@ -14,12 +14,6 @@
 [[plugins]]
 	package = "@netlify/plugin-nextjs"
 
-# Redirects et headers pour l'API
-[[redirects]]
-	from = "/api/*"
-	to = "/.netlify/functions/:splat"
-	status = 200
-
 [[headers]]
 	for = "/api/*"
 	[headers.values]
