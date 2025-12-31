@@ -26,7 +26,7 @@ export async function GET(request: NextRequest) {
 			)
 		}
 
-		const supabase = await createServerSupabaseClient()
+		const supabase = await createServiceRoleClient()
 
 		const { data, error, count } = await supabase
 			.from('documents')

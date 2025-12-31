@@ -75,7 +75,7 @@ export class RAGPipeline {
 			})
 
 			// Execute Self-RAG loop
-			let response = await this.executeWithSelfRAG(
+			const response = await this.executeWithSelfRAG(
 				request,
 				traceContext,
 				metrics

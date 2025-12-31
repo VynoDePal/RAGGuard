@@ -10,6 +10,7 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { ChatInterface } from '@/components/rag/chat-interface'
 import { StatsDashboard } from '@/components/rag/stats-dashboard'
+import { ModeToggle } from '@/components/ui/mode-toggle'
 
 // Demo tenant ID - en production, récupérer depuis l'auth
 const DEMO_TENANT_ID = '00000000-0000-0000-0000-000000000000'
@@ -27,6 +28,7 @@ export default function DashboardPage() {
 						<span className="text-xl font-bold">RAGGuard</span>
 					</Link>
 					<div className="flex items-center gap-2">
+						<ModeToggle />
 						<Button variant="ghost" size="icon">
 							<Settings className="h-5 w-5" />
 						</Button>

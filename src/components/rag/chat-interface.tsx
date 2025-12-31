@@ -6,10 +6,9 @@
 
 import * as React from 'react'
 import { useState, useRef, useEffect } from 'react'
-import { Send, Loader2, AlertCircle, FileText, Sparkles } from 'lucide-react'
+import { Send, Bot, User, AlertCircle, Sparkles, FileText, Loader2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
 import type { RAGResponse, SourceReference } from '@/types'
 
