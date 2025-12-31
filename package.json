@@ -8,7 +8,9 @@
     "dev:both:sh": "./start-dev.sh",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "traffic:generate": "node scripts/traffic/generate-traffic.js",
+    "datadog:export": "node scripts/datadog/export-artifacts.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.1",
