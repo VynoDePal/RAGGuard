@@ -38,9 +38,6 @@ export async function POST(request: NextRequest) {
 			user_id: request.headers.get('x-user-id') || undefined,
 		})
 
-		// Flush Datadog buffers
-		await datadog.flushAll()
-
 		return NextResponse.json(response, {
 			headers: {
 				'X-Trace-ID': response.trace_id,
@@ -61,6 +58,13 @@ export async function POST(request: NextRequest) {
 			},
 			{ status: 500 }
 		)
+	} finally {
+		// Ensure we flush buffers in both success and error cases.
+		try {
+			await datadog.flushAll()
+		} catch (flushError) {
+			console.error('[RAG API] Datadog flush error:', flushError)
+		}
 	}
 }
 
