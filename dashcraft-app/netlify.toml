@@ -3,8 +3,8 @@
 # =============================================
 
 [build]
-	command = "npm run build"
-	publish = ".next"
+	command = "npm --prefix dashcraft-app run build"
+	publish = "dashcraft-app/.next"
 
 [build.environment]
 	NODE_VERSION = "20"
